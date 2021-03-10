@@ -15,6 +15,7 @@ public class DoubleClickDemo {
 	    driver.manage().window().maximize(); //maximize windows
 	    
 	    driver.get("https://api.jquery.com/dblclick/");
+	    System.out.println("Launch the url ");
 	    
 	    driver.switchTo().frame(driver.findElement(By.xpath("//iframe")));
 	    Actions act=new Actions(driver);
